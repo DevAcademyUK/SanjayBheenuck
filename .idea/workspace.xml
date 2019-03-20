@@ -3,6 +3,7 @@
   <component name="ChangeListManager">
     <list default="true" id="782c5c49-fc78-43b4-89fb-6f38ac98c1d9" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/games/rockPaperScissors.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/games/rockPaperScissors.java" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -13,11 +14,20 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/songs/singSong.java">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="321">
-              <caret line="25" column="15" lean-forward="true" selection-start-line="25" selection-start-column="15" selection-end-line="25" selection-end-column="15" />
+              <caret line="25" column="15" selection-start-line="25" selection-start-column="15" selection-end-line="25" selection-end-column="15" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/games/rockPaperScissors.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="343">
+              <caret line="62" column="94" selection-start-line="62" selection-start-column="94" selection-end-line="62" selection-end-column="94" />
             </state>
           </provider>
         </entry>
@@ -39,6 +49,7 @@
       <list>
         <option value="$PROJECT_DIR$/src/songs/singSong.java" />
         <option value="$PROJECT_DIR$/src/songs/singDuck.java" />
+        <option value="$PROJECT_DIR$/src/games/rockPaperScissors.java" />
       </list>
     </option>
   </component>
@@ -54,30 +65,30 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
+      <pane id="PackagesPane" />
+      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
             <path>
-              <item name="DataTypes" type="b2602c69:ProjectViewProjectNode" />
-              <item name="DataTypes" type="462c0819:PsiDirectoryNode" />
+              <item name="SanjayBheenuck" type="b2602c69:ProjectViewProjectNode" />
+              <item name="SanjayBheenuck" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
-              <item name="DataTypes" type="b2602c69:ProjectViewProjectNode" />
-              <item name="DataTypes" type="462c0819:PsiDirectoryNode" />
+              <item name="SanjayBheenuck" type="b2602c69:ProjectViewProjectNode" />
+              <item name="SanjayBheenuck" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
-              <item name="DataTypes" type="b2602c69:ProjectViewProjectNode" />
-              <item name="DataTypes" type="462c0819:PsiDirectoryNode" />
+              <item name="SanjayBheenuck" type="b2602c69:ProjectViewProjectNode" />
+              <item name="SanjayBheenuck" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="songs" type="462c0819:PsiDirectoryNode" />
+              <item name="games" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
         </subPane>
       </pane>
-      <pane id="PackagesPane" />
-      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -144,17 +155,17 @@
       <updated>1552989020768</updated>
       <workItem from="1552989028366" duration="9022000" />
       <workItem from="1553007496854" duration="2591000" />
+      <workItem from="1553082649103" duration="2231000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="11613000" />
+    <option name="totallyTimeSpent" value="13844000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1382" height="744" extended-state="6" />
-    <editor active="true" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.25340393" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.25718608" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Designer" order="2" />
       <window_info id="UI Designer" order="3" />
@@ -186,17 +197,18 @@
     <option name="version" value="1" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/src/songs/singDuck.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="328">
-          <caret line="33" column="16" lean-forward="true" selection-start-line="33" selection-start-column="16" selection-end-line="33" selection-end-column="16" />
-        </state>
-      </provider>
-    </entry>
+    <entry file="file://$PROJECT_DIR$/src/songs/singDuck.java" />
     <entry file="file://$PROJECT_DIR$/src/songs/singSong.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="321">
-          <caret line="25" column="15" lean-forward="true" selection-start-line="25" selection-start-column="15" selection-end-line="25" selection-end-column="15" />
+          <caret line="25" column="15" selection-start-line="25" selection-start-column="15" selection-end-line="25" selection-end-column="15" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/games/rockPaperScissors.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="343">
+          <caret line="62" column="94" selection-start-line="62" selection-start-column="94" selection-end-line="62" selection-end-column="94" />
         </state>
       </provider>
     </entry>
