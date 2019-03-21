@@ -40,12 +40,16 @@ public class dog {
             playing = "Lets go chase us some sheep!";
         }
 
+        return playing;
+    }
+
         private String beHuman (String name, int age, String breed){
             return "Hello human, i'm" + name + "and I am a" + age + "year old" + breed + ", What breed are you?";
+
         }
 
     }
-}
+
 
 
 

@@ -7,7 +7,8 @@ public class createAnimal {
     Scanner myScanner = new Scanner(System.in);
 
     public static void main(String args[]) {
-
+        createAnimal create = new createAnimal();
+        create.getAnimalType();
     }
 
     private void  getAnimalType(){
@@ -26,35 +27,34 @@ public class createAnimal {
 
     private void createCat() {
         System.out.println("What is the cats's name?");
-        String name = Scanner.myScanner.nextLine();
+        String name = myScanner.nextLine();
         System.out.println("How big is the cat?");
-        String size = Scanner.myScanner.nextLine();
+        String size = myScanner.nextLine();
         System.out.println("How old is the cat?");
-        int age = MyScanner.nextInt();
+        int age = Integer.parseInt(myScanner.nextLine());
         System.out.println("Is it an indoor or outdoor cat?");
-        String type = Scanner.myScanner.nextLine();
+        String type = myScanner.nextLine();
         System.out.println("What colour is the cat");
-        String colour = Scanner.myScanner.nextLine();
+        String colour = myScanner.nextLine();
 
-        myCat.flap(size);
-        myCat.behave(type);
-        myCat.beHuman(name, age, colour, type);
+        cat myCat = new cat(name, size, age, type);
+
+        getAnimalType();
 
     }
 
     private void createDog() {
         System.out.println("What is the dog's name?");
-        String name = Scanner.myScanner.nextLine();
+        String name = myScanner.nextLine();
         System.out.println("How big is the dog?");
-        String size = Scanner.myScanner.nextLine();
+        String size = myScanner.nextLine();
         System.out.println("How old is the dog?");
-        int age = MyScanner.nextInt();
+        int age = Integer.parseInt(myScanner.nextLine());
         System.out.println("What breed is the dog");
-        String breed = Scanner.myScanner.nextLine();
+        String breed = myScanner.nextLine();
 
-        myDog.bark(size);
-        myDog.play(breed);
-        mydog.beHuman(name, age, breed);
+        dog myDog = new dog(name, size, age, breed);
+        getAnimalType();
 
     }
 
