@@ -1,8 +1,8 @@
 package banking;
 
-import java.util.Scanner;
-
-public class user {
+import java.util.Scanner;   //login details for ATM:
+                                    //User: devacademy
+public class user {                 //pin: 1234
 
     public double currentBalance;      //defining instance variables which hold account data.
     public double jointBalance;
