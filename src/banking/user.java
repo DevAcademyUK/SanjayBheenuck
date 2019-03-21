@@ -71,14 +71,14 @@ public class user {                 //pin: 1234
             System.out.println("Your balance is:  " + currentBalance);
         } else if (savingsSelect.equalsIgnoreCase("2")) {
             System.out.println("enter amount: ");
-            int withdraw = myScanner.nextInt();
+            double withdraw = myScanner.nextDouble();
             currentBalance = currentBalance - withdraw;  //Value manipulations for options 1-3
             System.out.println(" ");
             System.out.println("Your new balance is:  " + currentBalance);
 
         } else if (savingsSelect.equalsIgnoreCase("3")) {
             System.out.println("enter amount: ");
-            int deposit = myScanner.nextInt();
+            double deposit = myScanner.nextDouble();
             currentBalance = currentBalance + deposit;
             System.out.println(" ");
             System.out.println("your new balance is:  " + currentBalance);
@@ -103,24 +103,19 @@ public class user {                 //pin: 1234
             System.out.println("Your balance is: " + jointBalance);
         } else if (jointSelect.equalsIgnoreCase("2")) {
             System.out.println("enter amount: ");
-            int withdraw = myScanner.nextInt();
+            double withdraw = myScanner.nextDouble();
             jointBalance = jointBalance - withdraw;
             System.out.println(" ");
             System.out.println("Your new balance is:  " + jointBalance);
 
         } else if (jointSelect.equalsIgnoreCase("3")) {
             System.out.println("enter amount: ");
-            int deposit = myScanner.nextInt();
+            double deposit = myScanner.nextDouble();
             jointBalance = jointBalance + deposit;
             System.out.println(" ");
             System.out.println("your new balance is:  " + jointBalance);
         } else if (jointSelect.equalsIgnoreCase("4")) {
-            System.out.println("Enter amount: ");
-            int transferValue = myScanner.nextInt();
-            System.out.println(" ");
-            System.out.println("Enter account for transfer: ");
-            String accountTransfer = myScanner.nextLine();
-            System.out.println(" ");
+            transferMenu();
         } else {
             login();
         }
@@ -136,24 +131,19 @@ public class user {                 //pin: 1234
             System.out.println("Your balance is: " + savingsBalance);
         } else if (jointSelect.equalsIgnoreCase("2")) {
             System.out.println("enter amount: ");
-            int withdraw = myScanner.nextInt();
+            double withdraw = myScanner.nextDouble();
             savingsBalance = savingsBalance - withdraw;
             System.out.println(" ");
             System.out.println("Your new balance is:  " + savingsBalance);
 
         } else if (jointSelect.equalsIgnoreCase("3")) {
             System.out.println("enter amount: ");
-            int deposit = myScanner.nextInt();
+            double deposit = myScanner.nextDouble();
             savingsBalance = savingsBalance + deposit;
             System.out.println(" ");
             System.out.println("your new balance is: " + savingsBalance);
         } else if (jointSelect.equalsIgnoreCase("4")) {
-            System.out.println("Enter amount: ");
-            int transferValue = myScanner.nextInt();
-            System.out.println(" ");
-            System.out.println("Enter account for transfer: ");
-            String accountTransfer = myScanner.nextLine();
-            System.out.println(" ");
+            transferMenu();
         } else {
             login();
         }
