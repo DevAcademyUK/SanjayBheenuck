@@ -8,7 +8,7 @@ public class cat {
     private String colour;
     private String type;
 
-    public cat(String name, String size, int age, String colour) {
+    public cat(String name, String size, int age, String colour,String type) {
         this.name = name;
         this.size = size;
         this.age = age;
