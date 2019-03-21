@@ -38,7 +38,7 @@ public class createAnimal {
         System.out.println("What colour is the cat");
         String colour = myScanner.nextLine();
 
-        cat myCat = new cat(name, size, age, type);
+        cat myCat = new cat(name, size, age, colour, type);
 
         getAnimalType();
 
