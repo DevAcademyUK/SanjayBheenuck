@@ -12,7 +12,7 @@ public class cat {
         this.name = name;
         this.size = size;
         this.age = age;
-        this.breed = breed;
+        this.type = type;
     }
 
     private String catSize(String flap) {
