@@ -7,6 +7,11 @@ public class createAnimal {
 
     Scanner myScanner = new Scanner(System.in);
 
+    public static void main(String args[]) {
+        createAnimal create = new createAnimal();
+        create.getAnimalType();
+    }
+
     private void  getAnimalType(){
         System.out.println("What animal would you like to create?");
         String animal = myScanner.nextLine();
