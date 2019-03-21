@@ -14,6 +14,7 @@ public class cat {
         this.age = age;
         this.type = type;
         this.colour = colour;
+        this.type = type;
     }
 
     private String catSize(String flap) {
@@ -45,3 +46,4 @@ public class cat {
             return "MEOW MEOW, i'm" + name + "and I am a" + age + "year old"  +type+ "who is" +colour+ ", Where do you live?";
         }
     }
+}
