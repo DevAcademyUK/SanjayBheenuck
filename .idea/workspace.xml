@@ -2,10 +2,9 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="782c5c49-fc78-43b4-89fb-6f38ac98c1d9" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/src/banking/user.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/animals/cat.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/animals/cat.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/animals/createAnimal.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/animals/createAnimal.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/animals/dog.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/animals/dog.java" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -19,8 +18,17 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/animals/createAnimal.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="120">
-              <caret line="39" column="49" selection-start-line="39" selection-start-column="49" selection-end-line="39" selection-end-column="49" />
+            <state relative-caret-position="119">
+              <caret line="7" column="47" selection-start-line="7" selection-start-column="47" selection-end-line="7" selection-end-column="47" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/banking/user.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="34">
+              <caret line="2" column="25" lean-forward="true" selection-start-line="2" selection-start-column="25" selection-end-line="2" selection-end-column="25" />
             </state>
           </provider>
         </entry>
@@ -45,6 +53,7 @@
         <option value="$PROJECT_DIR$/src/songs/singSong.java" />
         <option value="$PROJECT_DIR$/src/animals/dog.java" />
         <option value="$PROJECT_DIR$/src/animals/cat.java" />
+        <option value="$PROJECT_DIR$/src/banking/user.java" />
         <option value="$PROJECT_DIR$/src/animals/createAnimal.java" />
       </list>
     </option>
@@ -177,15 +186,16 @@
       <updated>1552989020768</updated>
       <workItem from="1552989028366" duration="9022000" />
       <workItem from="1553007496854" duration="2591000" />
-      <workItem from="1553082649103" duration="25030000" />
+      <workItem from="1553082649103" duration="25625000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="36643000" />
+    <option name="totallyTimeSpent" value="37238000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1382" height="744" extended-state="6" />
+    <editor active="true" />
     <layout>
       <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.25718608" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
@@ -248,10 +258,17 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/src/banking/user.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="34">
+          <caret line="2" column="25" lean-forward="true" selection-start-line="2" selection-start-column="25" selection-end-line="2" selection-end-column="25" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/animals/createAnimal.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="120">
-          <caret line="39" column="49" selection-start-line="39" selection-start-column="49" selection-end-line="39" selection-end-column="49" />
+        <state relative-caret-position="119">
+          <caret line="7" column="47" selection-start-line="7" selection-start-column="47" selection-end-line="7" selection-end-column="47" />
         </state>
       </provider>
     </entry>
