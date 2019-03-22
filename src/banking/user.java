@@ -65,16 +65,24 @@ public class user {                 //pin: 1234
         System.out.println("What would you like to do, select number :");
         System.out.println(" ");
         System.out.println(" ");
-        System.out.println("1.View balance" + "\n" + "2.Withdraw" + "\n" + "3.Deposit" + "\n" + "4.Transfer" + "\n"+ "any key to logout");
+        System.out.println("1.View balance" + "\n" + "2.Withdraw" + "\n" + "3.Deposit" + "\n" + "4.Transfer" + "\n \n"+ "any other key to logout");
         String savingsSelect = myScanner.nextLine();
         if (savingsSelect.equalsIgnoreCase("1")) {
             System.out.println("Your balance is:  " + currentBalance);
+            System.out.println("Goodbye: ");
+            login();
+
+
         } else if (savingsSelect.equalsIgnoreCase("2")) {
             System.out.println("enter amount: ");
             double withdraw = myScanner.nextDouble();
             currentBalance = currentBalance - withdraw;  //Value manipulations for options 1-3
             System.out.println(" ");
             System.out.println("Your new balance is:  " + currentBalance);
+            System.out.println("Goodbye:");
+            System.out.println(" ");
+            login();
+
 
         } else if (savingsSelect.equalsIgnoreCase("3")) {
             System.out.println("enter amount: ");
@@ -82,6 +90,10 @@ public class user {                 //pin: 1234
             currentBalance = currentBalance + deposit;
             System.out.println(" ");
             System.out.println("your new balance is:  " + currentBalance);
+            System.out.println("Goodbye:");
+            System.out.println(" ");
+            login();
+
         } else if (savingsSelect.equalsIgnoreCase("4")) {
 
             transferMenu(); //if the user selects transfer they are pushed to a new method, as this is more complex.
@@ -97,16 +109,24 @@ public class user {                 //pin: 1234
         System.out.println("What would you like to do, select number: ");
         System.out.println(" ");
         System.out.println(" ");
-        System.out.println("1.View balance" + "\n" + "2.Withdraw" + "\n" + "3.Deposit" + "\n" + "4.Transfer"+ "\n"+ "any key to logout");
+        System.out.println("1.View balance" + "\n" + "2.Withdraw" + "\n" + "3.Deposit" + "\n" + "4.Transfer"+ "\n\n"+ "any other key to logout");
         String jointSelect = myScanner.nextLine();
         if (jointSelect.equalsIgnoreCase("1")) {
             System.out.println("Your balance is: " + jointBalance);
+            System.out.println("Goodbye:");
+            System.out.println(" ");
+            login();
+
         } else if (jointSelect.equalsIgnoreCase("2")) {
             System.out.println("enter amount: ");
             double withdraw = myScanner.nextDouble();
             jointBalance = jointBalance - withdraw;
             System.out.println(" ");
             System.out.println("Your new balance is:  " + jointBalance);
+            System.out.println("Goodbye:");
+            System.out.println(" ");
+            login();
+
 
         } else if (jointSelect.equalsIgnoreCase("3")) {
             System.out.println("enter amount: ");
@@ -114,6 +134,10 @@ public class user {                 //pin: 1234
             jointBalance = jointBalance + deposit;
             System.out.println(" ");
             System.out.println("your new balance is:  " + jointBalance);
+            System.out.println("Goodbye:");
+            System.out.println(" ");
+            login();
+
         } else if (jointSelect.equalsIgnoreCase("4")) {
             transferMenu();
         } else {
@@ -125,16 +149,24 @@ public class user {                 //pin: 1234
         System.out.println("What would you like to do, select number: ");
         System.out.println(" ");
         System.out.println(" ");
-        System.out.println("1.View balance" + "\n" + "2.Withdraw" + "\n" + "3.Deposit" + "\n" + "4.Transfer"+ "\n"+ "any key to logout");
+        System.out.println("1.View balance" + "\n" + "2.Withdraw" + "\n" + "3.Deposit" + "\n" + "4.Transfer"+ "\n\n"+ "any other key to logout");
         String jointSelect = myScanner.nextLine();
         if (jointSelect.equalsIgnoreCase("1")) {
             System.out.println("Your balance is: " + savingsBalance);
+            System.out.println(" ");
+            System.out.println("Goodbye:");
+            System.out.println(" ");
+            login();
         } else if (jointSelect.equalsIgnoreCase("2")) {
             System.out.println("enter amount: ");
             double withdraw = myScanner.nextDouble();
             savingsBalance = savingsBalance - withdraw;
             System.out.println(" ");
             System.out.println("Your new balance is:  " + savingsBalance);
+            System.out.println(" ");
+            System.out.println("Goodbye:");
+            System.out.println(" ");
+            login();
 
         } else if (jointSelect.equalsIgnoreCase("3")) {
             System.out.println("enter amount: ");
@@ -142,6 +174,11 @@ public class user {                 //pin: 1234
             savingsBalance = savingsBalance + deposit;
             System.out.println(" ");
             System.out.println("your new balance is: " + savingsBalance);
+            System.out.println(" ");
+            System.out.println("Goodbye:");
+            System.out.println(" ");
+            login();
+
         } else if (jointSelect.equalsIgnoreCase("4")) {
             transferMenu();
         } else {
@@ -153,14 +190,14 @@ public class user {                 //pin: 1234
 
     private void transferMenu() { //transfer method handles logic for transfer calculations by comparing strings..
                                     //And by +/- instance account variables via a series of if statements.
-        System.out.println("From which account?");
+        System.out.println("From which account? (type name)");
         String accountFrom = myScanner.nextLine();
         System.out.println(" ");              ///These questions prompt account to/from and transfer value.
-        System.out.println("To which account?");
+        System.out.println("To which account?(type name)");
         String accountTransfer = myScanner.nextLine();
         System.out.println(" ");
-        System.out.println("How much would you like to transfer?");
-        double transferValue = myScanner.nextInt();
+        System.out.println("How much would you like to transfer? (type amount)");
+        double transferValue = myScanner.nextDouble();
 
         if (accountFrom.equalsIgnoreCase("Current") && accountTransfer.equalsIgnoreCase("joint")) {
             currentBalance = currentBalance - transferValue;
@@ -168,6 +205,7 @@ public class user {                 //pin: 1234
             System.out.println(" ");
             System.out.println("your new balance is: ");
             System.out.println("Current:" + currentBalance + "\n" + "Joint: " + jointBalance);
+            System.out.println(" ");
             System.out.println("Goodbye");
             login();
 
@@ -178,6 +216,7 @@ public class user {                 //pin: 1234
             System.out.println(" ");
             System.out.println("your new balance is: ");
             System.out.println("Current:" + currentBalance + "\n" + "Savings: " + savingsBalance);
+            System.out.println(" ");
             System.out.println("Goodbye");
             login();
 
@@ -187,6 +226,7 @@ public class user {                 //pin: 1234
             System.out.println(" ");
             System.out.println("your new balance is: ");
             System.out.println("Savings:" + savingsBalance + "\n" + "current: " + currentBalance);
+            System.out.println(" ");
             System.out.println("Goodbye");
             login();
 
@@ -195,7 +235,8 @@ public class user {                 //pin: 1234
             jointBalance = jointBalance + transferValue;   //else if statement is same above, comparing different string combinations
             System.out.println(" ");
             System.out.println("your new balance is: ");
-            System.out.println("Savings:" + savingsBalance + "\n" + "Joint: " + jointBalance);
+            System.out.println("Savings: " +savingsBalance+ "current: " +currentBalance );
+            System.out.println(" ");
             System.out.println("Goodbye");
             login();
 
@@ -214,6 +255,8 @@ public class user {                 //pin: 1234
             savingsBalance = savingsBalance + transferValue;
             System.out.println(" ");
             System.out.println("your new balance is: ");
+            System.out.println(" ");
+            System.out.println(" ");
             System.out.println("Joint:" + jointBalance + "\n" + "Savings: " + savingsBalance);
             System.out.println("Goodbye");
             login(); //return to login screen
