@@ -114,14 +114,14 @@ newSession();
 
         String loginAttemptType = "2";
 
-        boolean loginYes = false;
+        boolean loginYes = false; //boolean value confirms or denys login attempt.
         for (loginDetails login : logins) {
             if (login.checkDetails(loginAttemptID, loginAttemptPassword, loginAttemptType))   //Function checks user Id, password and type to confirm access.
-                hrLoginOkay(loginAttemptID);
+                hrLoginOkay(loginAttemptID);  //function called from employee data class.
             loginYes = true;
         }
         if (loginYes == false) {
-            System.out.println("Incorrect login, please try again");
+            System.out.println("Incorrect login, please try again"); //boolean verifies access.
             hrSession();
         }
         System.out.println("Incorrect login, please try again");
@@ -129,7 +129,7 @@ newSession();
 
     }
 
-    private void managerSession() {
+    private void managerSession() { //Methodolgy is the same as HR login
         System.out.println("You have chosen to login as the HR manager");
         System.out.println(" ");
         System.out.println("enter user ID:...   ");
@@ -156,7 +156,7 @@ newSession();
     }
 
 
-    public void employeeSession() {
+    public void employeeSession() {  //Methodology is the same as previous login.
         System.out.println("Welcome, please follow the instructions to login");  //Employee login menu captures user ID and password.
         System.out.println(" ");
         System.out.println("enter user ID:...   ");
@@ -183,7 +183,7 @@ newSession();
     }
 
     private void employeeLoginOkay(int id) {
-        for (employee e : employees) {
+        for (employee e : employees) {  //Verfication of user ID, then user is sent to employee menu.
             if (e.employeeID == id) {
                 employeeLogin li = new employeeLogin(e);
                 li.menu();
@@ -195,7 +195,7 @@ newSession();
     private void hrLoginOkay(int id) {
 
             for (employee e : employees) {
-                if (e.employeeID == id) {
+                if (e.employeeID == id) {   //ID verified and user sent to Hr menu.
                     hrLogin hr = new hrLogin(employees);
                     hr.menu();
                 }
@@ -203,7 +203,7 @@ newSession();
     }
 
     private void managerLoginOkay(int id){
-        for(employee e: employees){
+        for(employee e: employees){ //ID verified, user sent to manager login.
             if(e.employeeID == id){
                 managerLogin ml = new managerLogin(employees);
                 ml.menu();

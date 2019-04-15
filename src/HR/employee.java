@@ -3,9 +3,9 @@ package HR;
 import java.util.Comparator;
 
 
+//Class creates and initialises variables for employee arraylist. as well as setting functions, getter and setters throughout the program.
 
-
-public class employee implements Comparable<employee> {
+public class employee  {
     public int employeeID;
     public String employeefirstName;
     public String employeelastName;
@@ -36,13 +36,10 @@ public class employee implements Comparable<employee> {
 
     }
 
-    public String getEmployeedetails() {
-        return employeefirstName;
 
-    }
 
     @Override
-    public String toString() {
+    public String toString() { //This override allows printing of entire list in manager class.
         return "Employee Id: " + this.getEmployeeID() +
                 "Name: " + this.getEmployeefirstName()+" "+this.getEmployeelastName()
         +"Address: " + this.getEmployeeAddress1()+ " "+ this.getEmployeeTownCity()+ " " +this.getEmployeeCounty()+
@@ -53,7 +50,7 @@ public class employee implements Comparable<employee> {
 
     public int getEmployeeID() {
         return employeeID;
-    }
+    } //getters for all variables
 
     public String getEmployeefirstName() {
         return employeefirstName;
@@ -108,7 +105,7 @@ public class employee implements Comparable<employee> {
 
     public employee(int employeeID) {
         this.employeeID = employeeID;
-    }
+    } //setters for all variables
 
     public void setEmployeeID(int employeeID) {
         this.employeeID = employeeID;
@@ -158,31 +155,10 @@ public class employee implements Comparable<employee> {
         this.employeeStartDate = employeeStartDate;
     }
 
-    public String getAllStrings() {
-
-        return employeefirstName;
 
 
 
-    }
-
-    @Override
-        public int compareTo (employee e){
-
-            String name = e.employeefirstName;
-            return this.employeefirstName.compareTo(name);
         }
 
-        public static Comparator<employee> employeeComparator = new Comparator<employee>() {
-            @Override
-            public int compare(employee e1, employee e2) {
-                String author1 = e1.employeefirstName.toUpperCase();
-                String author2 = e2.employeelastName.toUpperCase();
-                return author1.compareTo(author2);
 
-            }
-
-        };
-
-    }
 

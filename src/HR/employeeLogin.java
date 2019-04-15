@@ -13,7 +13,7 @@ public class employeeLogin {
         this.emp = emp;
     }
 
-    public void menu() {
+    public void menu() {  //menu presents employee level choices./
         System.out.println("Login successful.");
 
         System.out.println("1 - View my details");
@@ -49,7 +49,7 @@ public class employeeLogin {
     private void editdetails() {
         System.out.println("Your Permission level allows you to edit"); //If user has selected to edit..
         System.out.println("1 - name ");
-        System.out.println("2 - Contact details");
+        System.out.println("2 - Contact details");  //Access level only allows editing of these values.
         System.out.println("3 - Address");
         int choice = Integer.parseInt(myScanner.nextLine());
 
@@ -70,7 +70,7 @@ public class employeeLogin {
 
     }
 
-    private void editAddress() {
+    private void editAddress() {  // populates variables with new information.
         System.out.println("You have chosen to edit your address details: ");
         System.out.println("Please enter the first line of  your new address...");
         String newAddress = myScanner.nextLine();
@@ -84,11 +84,11 @@ public class employeeLogin {
         System.out.println("Confirm change of details?");
         System.out.println("1 - Yes");
         System.out.println("2 - No");
-        int choice = Integer.parseInt(myScanner.nextLine());
+        int choice = Integer.parseInt(myScanner.nextLine()); //confirm change
 
         switch (choice){
             case 1:
-                emp.employeeAddress1= newAddress;
+                emp.employeeAddress1= newAddress;  //fills arraylist data with new captured variables.
                 emp.employeeTownCity = newCity;
                 emp.employeePostCode = newPostcode;
                 emp.employeeCounty = newCounty;
@@ -108,7 +108,7 @@ public class employeeLogin {
 
     }
 
-    private void editContact() {
+    private void editContact() { //Process same as above.
         System.out.println("You have chosen to edit your contact details: ");
         System.out.println("Please enter your telephone number... ");
         String newNumber = myScanner.nextLine();
@@ -152,7 +152,7 @@ public class employeeLogin {
 
         switch (choice){
             case 1:
-                emp.employeefirstName= newFirstName;
+                emp.employeefirstName= newFirstName;  //Process is the same as above.
                 emp.employeelastName = newLastname;
                 System.out.println("Change confirmed");
                 menu();
@@ -169,7 +169,7 @@ public class employeeLogin {
 
     }
 
-    private void viewDetails() {
+    private void viewDetails() { //Method prints out user details from object passed as parameter.
         System.out.println("The following information is held by our system"+ "\n"+ " please note that you do not " +
                 "have permission to edit some of these fields" );
         System.out.println(emp.employeeID);   //Method will print all employee data.

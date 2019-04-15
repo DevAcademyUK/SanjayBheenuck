@@ -11,7 +11,7 @@ public class loginDetails {
         MANAGER;
     }
 
-
+//Class just holds variables and functions for user details arraylist in order to populate.
 
     private String userName;
     private String userPassword;
@@ -29,7 +29,7 @@ public class loginDetails {
 // 3 = HR Manager
     }
 
-    public boolean checkDetails(int id, String password, String type) {
+    public boolean checkDetails(int id, String password, String type) { //Verifcation function for user login.
 
         return (id == this.userId && this.userPassword.equals(password) && this.userType.equals(type));
 

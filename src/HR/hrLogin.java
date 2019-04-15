@@ -16,7 +16,7 @@ public class hrLogin extends hrMain {
     public void menu() {
         System.out.println("Login successful. As a HR professional you may:");
 
-        System.out.println("1 - View employee details");
+        System.out.println("1 - View employee details");  //Hr access level options.
 
         System.out.println("2 - Edit employee details");
 
@@ -47,14 +47,14 @@ public class hrLogin extends hrMain {
 
     private void editDetails() {
         System.out.println("enter user ID to edit details...");
-        int userID = Integer.parseInt(myScanner.nextLine());
+        int userID = Integer.parseInt(myScanner.nextLine());  //Uses stream and filter to find user via ID.
 
 
         Optional<employee> foundEmployee = employees.stream().filter(e -> e.employeeID == userID).findFirst();
 
         if (!foundEmployee.isPresent()) {
             System.out.println("User not found");
-            editDetails();
+            editDetails();  //If user isn't found, loop back.
 
 
         } else {
@@ -66,7 +66,7 @@ public class hrLogin extends hrMain {
             System.out.println("3 - Contact details");
             System.out.println("4 - Date of birth");
             System.out.println("5 - Start date");
-            System.out.println("6 - User ID");
+            System.out.println("6 - User ID");      //User ID retains and any of these details are editable for the user found.
             System.out.println("7 - position");
             System.out.println("8 - Return to menu");
             int choice = Integer.parseInt(myScanner.nextLine());
@@ -74,7 +74,7 @@ public class hrLogin extends hrMain {
             switch (choice) {
 
                 case 1:
-                    System.out.println("Enter new first name: ");
+                    System.out.println("Enter new first name: ");  //Arraylist entry is written over get/setter and scanner.
                     foundEmployee.get().setEmployeefirstName(myScanner.nextLine());
                     System.out.println("Enter new second name: ");
                     foundEmployee.get().setEmployeelastName(myScanner.nextLine());
@@ -85,7 +85,7 @@ public class hrLogin extends hrMain {
 
 
                 case 2:
-                    System.out.println("Enter new address(first line) ");
+                    System.out.println("Enter new address(first line) "); //As above for address.
                     foundEmployee.get().setEmployeeAddress1(myScanner.nextLine());
                     System.out.println("Enter new town/city: ");
                     foundEmployee.get().setEmployeeTownCity(myScanner.nextLine());
@@ -99,7 +99,7 @@ public class hrLogin extends hrMain {
 
 
                 case 3:
-                    System.out.println("Enter new contact number: ");
+                    System.out.println("Enter new contact number: "); //As above for contact details.
                     foundEmployee.get().setEmployeeContactNumber(myScanner.nextLine());
                     System.out.println("Enter new e-mail address: ");
                     foundEmployee.get().setEmployeeEmailAddress(myScanner.nextLine());
@@ -108,7 +108,7 @@ public class hrLogin extends hrMain {
                     menu();
 
                 case 4:
-                    System.out.println("Enter new date of birth DDMMYY: ");
+                    System.out.println("Enter new date of birth DDMMYY: "); //overwrites DOB
                     foundEmployee.get().setEmployeeDateOfBirth(Integer.parseInt(myScanner.nextLine()));
                     System.out.println("New details are: ");
                     System.out.println(foundEmployee.get().getEmployeeDateOfBirth());
@@ -116,7 +116,7 @@ public class hrLogin extends hrMain {
                     break;
 
                 case 5:
-                    System.out.println("Enter new start date DDMMYY: ");
+                    System.out.println("Enter new start date DDMMYY: ");  //overwrites start date
                     foundEmployee.get().setEmployeeStartDate(Integer.parseInt(myScanner.nextLine()));
                     System.out.println("New details are: ");
                     System.out.println(foundEmployee.get().getEmployeeStartDate());
@@ -124,7 +124,7 @@ public class hrLogin extends hrMain {
                     break;
 
                 case 6:
-                    System.out.println("Enter new user ID");
+                    System.out.println("Enter new user ID"); //overwrites user ID
                     foundEmployee.get().setEmployeeID(Integer.parseInt(myScanner.nextLine()));
                     System.out.println("New details are: ");
                     System.out.println(foundEmployee.get().getEmployeeID());
@@ -132,7 +132,7 @@ public class hrLogin extends hrMain {
                     break;
 
                 case 7:
-                    System.out.println("Enter new employee position: ");
+                    System.out.println("Enter new employee position: "); //Overwrites position
                     foundEmployee.get().setEmployeePosition(myScanner.nextLine());
                     System.out.println("New details are: ");
                     System.out.println(foundEmployee.get().getEmployeePosition());
@@ -155,7 +155,7 @@ public class hrLogin extends hrMain {
 
     }
 
-    private void addNew() {
+    private void addNew() { //Add new user, captures all required variables. Then adds to arraylist via .add command.
         System.out.println("enter new user's ID");
         int id = Integer.parseInt(myScanner.nextLine());
         System.out.println("enter new user's Firstname");
@@ -199,13 +199,13 @@ public class hrLogin extends hrMain {
 
     private void viewDetails() {
 
-        System.out.println("enter user ID to view details...");
+        System.out.println("enter user ID to view details..."); //to view a user capture ID
         int userID = Integer.parseInt(myScanner.nextLine());
 
 
         Optional<employee> foundEmployee = employees.stream().filter(e -> e.employeeID == userID).findFirst();
         for (int i = 0; i < employees.size(); i++) {
-            System.out.println(employees.get(i).getEmployeefirstName());
+            System.out.println(employees.get(i).getEmployeefirstName());  //stream and filter finds via ID
 
             if (!foundEmployee.isPresent()) {
                 System.out.println("User not found");
@@ -213,7 +213,7 @@ public class hrLogin extends hrMain {
 
 
             } else {
-                System.out.println("Employee found: ");
+                System.out.println("Employee found: "); //All employee details are printed via associated ID and getters in employee class.
                 System.out.println(foundEmployee.get().getEmployeefirstName() + " " + foundEmployee.get().getEmployeelastName());
                 System.out.println(foundEmployee.get().getEmployeeDateOfBirth());
                 System.out.println(foundEmployee.get().getEmployeeAddress1());
