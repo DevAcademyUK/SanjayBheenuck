@@ -5,7 +5,7 @@ import java.util.Comparator;
 
 //Class creates and initialises variables for employee arraylist. as well as setting functions, getter and setters throughout the program.
 
-public class employee  {
+public class employee implements Comparable<employee> {
     public int employeeID;
     public String employeefirstName;
     public String employeelastName;
@@ -155,10 +155,31 @@ public class employee  {
         this.employeeStartDate = employeeStartDate;
     }
 
+    public String getAllStrings() {
+
+        return employeefirstName;
 
 
 
+    }
+
+    @Override
+        public int compareTo (employee e){
+
+            String name = e.employeefirstName;
+            return this.employeefirstName.compareTo(name);
         }
 
+        public static Comparator<employee> employeeComparator = new Comparator<employee>() {
+            @Override
+            public int compare(employee e1, employee e2) {
+                String author1 = e1.employeefirstName.toUpperCase();
+                String author2 = e2.employeelastName.toUpperCase();
+                return author1.compareTo(author2);
 
+            }
+
+        };
+
+    }
 
