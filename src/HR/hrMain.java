@@ -5,6 +5,9 @@ import java.util.Scanner;
 
 import java.util.Collections;
 
+//See readme: To login use user ID and password,
+//as there are different levels of access you will need to login to HR as a HR employee type,
+//HR manager as manager type and employee as employee etc...
 
 public class hrMain {
     Scanner myScanner = new Scanner(System.in);

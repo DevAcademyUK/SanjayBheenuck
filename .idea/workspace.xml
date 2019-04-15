@@ -2,12 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="782c5c49-fc78-43b4-89fb-6f38ac98c1d9" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/out/production/DataTypes/HR/employee$1.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/DataTypes/HR/employee.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/DataTypes/HR/employee.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/DataTypes/HR/hrLogin.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/DataTypes/HR/loginSession.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/DataTypes/HR/managerLogin.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/HR/employee.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/HR/employee.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/HR/hrMain.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/HR/hrMain.java" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -35,7 +30,7 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/HR/hrLogin.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="100">
+            <state relative-caret-position="3090">
               <caret line="215" column="139" selection-start-line="215" selection-start-column="139" selection-end-line="215" selection-end-column="139" />
             </state>
           </provider>
@@ -50,11 +45,11 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="false">
+      <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/HR/hrMain.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="2707">
-              <caret line="205" column="77" selection-start-line="205" selection-start-column="77" selection-end-line="205" selection-end-column="77" />
+            <state relative-caret-position="136">
+              <caret line="8" column="64" selection-start-line="8" selection-start-column="64" selection-end-line="8" selection-end-column="64" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -74,11 +69,11 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/HR/employee.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="328">
-              <caret line="179" column="13" lean-forward="true" selection-start-line="165" selection-start-column="4" selection-end-line="179" selection-end-column="13" />
+            <state relative-caret-position="345">
+              <caret line="179" column="13" selection-start-line="165" selection-start-column="4" selection-end-line="179" selection-end-column="13" />
               <folding>
                 <element signature="e#2005#2006#0" expanded="true" />
                 <element signature="e#2038#2039#0" expanded="true" />
@@ -204,12 +199,12 @@
         <option value="$PROJECT_DIR$/src/HR/Comporable.java" />
         <option value="$PROJECT_DIR$/src/librarylists/member.java" />
         <option value="$PROJECT_DIR$/src/HR/Data.java" />
-        <option value="$PROJECT_DIR$/src/HR/hrMain.java" />
         <option value="$PROJECT_DIR$/src/HR/employeeLogin.java" />
         <option value="$PROJECT_DIR$/src/HR/hrLogin.java" />
         <option value="$PROJECT_DIR$/src/HR/loginDetails.java" />
         <option value="$PROJECT_DIR$/src/HR/managerLogin.java" />
         <option value="$PROJECT_DIR$/src/HR/employee.java" />
+        <option value="$PROJECT_DIR$/src/HR/hrMain.java" />
       </list>
     </option>
   </component>
@@ -387,12 +382,12 @@
       <workItem from="1553007496854" duration="2591000" />
       <workItem from="1553082649103" duration="124774000" />
       <workItem from="1554980974593" duration="92732000" />
-      <workItem from="1555319049473" duration="4635000" />
+      <workItem from="1555319049473" duration="5409000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="233754000" />
+    <option name="totallyTimeSpent" value="234528000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -423,9 +418,9 @@
       <window_info anchor="bottom" id="TODO" order="7" weight="0.3289689" />
       <window_info anchor="bottom" id="Version Control" order="8" weight="0.3289689" />
       <window_info anchor="bottom" id="Database Changes" order="9" />
-      <window_info anchor="bottom" id="Terminal" order="10" weight="0.3289689" />
+      <window_info active="true" anchor="bottom" id="Terminal" order="10" visible="true" weight="0.3289689" />
       <window_info anchor="bottom" id="Event Log" order="11" side_tool="true" weight="0.3289689" />
-      <window_info active="true" anchor="bottom" id="Messages" order="12" visible="true" weight="0.3289689" />
+      <window_info anchor="bottom" id="Messages" order="12" weight="0.3289689" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
@@ -712,23 +707,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/HR/hrMain.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="2707">
-          <caret line="205" column="77" selection-start-line="205" selection-start-column="77" selection-end-line="205" selection-end-column="77" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/HR/hrLogin.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="100">
-          <caret line="215" column="139" selection-start-line="215" selection-start-column="139" selection-end-line="215" selection-end-column="139" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/HR/loginDetails.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="241">
@@ -767,8 +745,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/HR/employee.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="328">
-          <caret line="179" column="13" lean-forward="true" selection-start-line="165" selection-start-column="4" selection-end-line="179" selection-end-column="13" />
+        <state relative-caret-position="345">
+          <caret line="179" column="13" selection-start-line="165" selection-start-column="4" selection-end-line="179" selection-end-column="13" />
           <folding>
             <element signature="e#2005#2006#0" expanded="true" />
             <element signature="e#2038#2039#0" expanded="true" />
@@ -816,6 +794,23 @@
             <element signature="e#4522#4523#0" expanded="true" />
             <element signature="e#4585#4586#0" expanded="true" />
             <element signature="e#4643#4644#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/HR/hrLogin.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="3090">
+          <caret line="215" column="139" selection-start-line="215" selection-start-column="139" selection-end-line="215" selection-end-column="139" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/HR/hrMain.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="136">
+          <caret line="8" column="64" selection-start-line="8" selection-start-column="64" selection-end-line="8" selection-end-column="64" />
+          <folding>
+            <element signature="imports" expanded="true" />
           </folding>
         </state>
       </provider>
